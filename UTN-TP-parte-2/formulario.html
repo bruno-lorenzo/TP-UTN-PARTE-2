@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/estilos.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/contacto.ico" />
+    <title>Formulario</title>
+
+
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+
+  <div class="form-container" id="formulario">
+  <h1>¿Querés recibir más información sobre nuestros helados? <span>Registrate!</span></h1>
+  <form>
+      <div class="section"><span>1</span>Tus datos</div>
+      <div class="inner-wrap">
+          <label>Nombre completo <input type="text" name="campo1" required placeholder="Ej.: Juan Pérez"> </label>
+          <label>Dirección <textarea name="campo2" placeholder="Ej.: Enlightened Path 111"></textarea></label>
+          <label>E-mail  <input type="email" name="campo3" required placeholder="Ej.: jperez@mail.com"/></label>
+          <label>Teléfono <input type="text" name="campo4" /></label>
+  		</div>
+      <div class="section"><span>2</span>Crea tu clave</div>
+  		<div class="inner-wrap">
+          <label>Clave <input type="password" name="campo5" required/></label>
+          <label>Confirmá tu clave <input type="password" name="campo6" required /></label>
+      </div>
+      <div class="button-section">
+       <input type="submit" name="Registro" />
+       <span class="privacidad">
+         <input type="checkbox" name="campo7" required>
+         Acuerdo a nuestros <br>
+          <a class="terms" href="terminos_y_condiciones.html" target="_blank">Términos y condiciones</a>.
+        </span>
+
+      </div>
+
+  </form>
+  </div>
+
+  <footer class="pie">
+  </footer>
+
+</html>
