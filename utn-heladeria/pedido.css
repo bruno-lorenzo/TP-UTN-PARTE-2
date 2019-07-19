@@ -26,7 +26,7 @@ h5{
 
 /*------------ FOOTER ------------*/
 
-footer{
+/* footer{
     width: 100%;
     height: 50px;
     background-color: #545454;
@@ -54,4 +54,46 @@ footer{
     display: flex;
     justify-content: center;
     padding-top: 10px;
+} */
+
+
+ul{
+    list-style:none;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+ }
+
+.fa-twitter {
+   background: #55ACEE;
+   color: white;
+}
+
+.fa-google {
+   background: #DD4B39;
+   color: white;
+}
+
+.fa-linkedin {
+   background: #007BB5;
+   color: white;
+}
+
+/*Sticky (verticalmente alineado 50% desde arriba) */
+.icon-bar {
+   position: fixed;
+   top: 50%;
+   -webkit-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
+} 
+/*estilo para el icon-bar*/
+.icon-bar a {
+   display: block;
+   text-align: center;
+   padding: 0px;
+   transition: all 0.3s ease;
+   color: white;
+   font-size: 40px;
 }

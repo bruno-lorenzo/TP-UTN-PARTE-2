@@ -1,9 +1,24 @@
-header{
+body{
     background-image: url(img/fondocover4.jpg);
-    background-size: cover;
+    background-size: cover; 
 }
 
+h1{
+    color: #39bdc8;
+    font-family: 'Shadows Into Light', cursive, 'Noto Sans KR', sans-serif;
+}
 
+.cabecera{
+    font-size: 80px;
+}
+
+h5{
+   color: #313131;
+}
+
+.card .border-primary .mb-3{
+    max-width: 18em;
+}
 
 /*Formulario*/
 .form-container{
@@ -133,32 +148,44 @@ header{
 .terms{	font-family: Arial !important; color: blue !important; text-decoration: underline;}
 .terms{	font-family: Arial !important; color: darkviolet !important;}
 
-footer{
-    width: 100%;
-    height: 50px;
-    background-color: #545454;
+/*          FOOTER          */
+ul{
+    list-style:none;
 }
-
-.fa-facebook, .fa-instagram, .fa-pinterest{
-    font-size: 30px;
+.fa-facebook {
+    background: #3B5998;
     color: white;
-    margin: 0px 5px 0px 5px;
+ }
+
+.fa-twitter {
+   background: #55ACEE;
+   color: white;
 }
 
-.fa-instagram:hover{
-    color:violet;
+.fa-google {
+   background: #DD4B39;
+   color: white;
 }
 
-.fa-pinterest:hover{
-    color:red;
+.fa-linkedin {
+   background: #007BB5;
+   color: white;
 }
 
-.fa-facebook:hover{
-    color:blue;
-}
-
-#redes{
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
+/*Sticky (verticalmente alineado 50% desde arriba) */
+.icon-bar {
+   position: fixed;
+   top: 50%;
+   -webkit-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
+} 
+/*estilo para el icon-bar*/
+.icon-bar a {
+   display: block;
+   text-align: center;
+   padding: 0px;
+   transition: all 0.3s ease;
+   color: white;
+   font-size: 40px;
 }

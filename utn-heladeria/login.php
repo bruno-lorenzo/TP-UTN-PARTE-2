@@ -79,12 +79,35 @@ $resultado_login = $gsent->fetchAll();
     </div>   
 
     <footer>
-        <div id="redes">
-            <a href="#"><i class="fab fa-facebook" ></i></a> 
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-pinterest"></i></a>
+        <div class="icon-bar">
+            <ul>
+                <li>
+                    <a href="http://www.facebook.com/sharer.php?u=http://www.google.com&t=Prueba" class="facebook" data-href="http://www.google.com" data-send="false" data-layout="box-count" data-width="60" data-show-faces="false" rel="nofollow" target="_blank"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="http://www.twitter.com/share" class="twitter" data-text="Prueba Twitter" data-url="http://www.socialitejs.com" data-count="vertical" rel="nofollow" target="_blank"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="http://www.plus.google.com/share?url=http://www.google.com" class="google" data-size="tall" data-href="http://www.google.com" rel="nofollow" target="_blank"><i class="fab fa-google"></i></a>
+                </li>
+                <li>
+                    <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.google.com&title=Google" class="linkedin"  data-url="http://www.google.com" data-counter="top" rel="nofollow" target="_blank"><i class="fab fa-linkedin"></i></a> 
+                </li>  
+            </ul>    
         </div>
-    </footer>    
- 
+    </footer>  
+
+
 </body>
+
+<script type="text/javascript" src='./socialite.min.js'> 
+    $(document).ready(function()
+    {
+        $('article.text').one('mouseenter', function()
+        {
+            Socialite.load($(this)[0]);
+        });
+    });
+
+</script> 
 </html>
