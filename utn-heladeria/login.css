@@ -1,0 +1,35 @@
+header{
+    background-image: url(img/fondocover4.jpg);
+    background-size: cover;
+}
+
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #545454;
+}
+
+.fa-facebook, .fa-instagram, .fa-pinterest{
+    font-size: 30px;
+    color: white;
+    margin: 0px 5px 0px 5px;
+}
+
+.fa-instagram:hover{
+    color:violet;
+}
+
+.fa-pinterest:hover{
+    color:red;
+}
+
+.fa-facebook:hover{
+    color:blue;
+}
+
+#redes{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
