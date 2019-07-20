@@ -52,8 +52,9 @@ $resultado_sucMonte = $gsent->fetchAll();
 
 <body>
     <div class="container">
+     
         <header class="cabecera">
-            <h1 class="text-center cabecera">HELARTE</h1>
+            <a href="index.php" class="text-decoration-none"><h1 class="text-center cabecera">HELARTE</h1></a>
             <h5><strong>Amor por lo que hacemos</strong></h5>
         </header>
 
@@ -88,11 +89,11 @@ $resultado_sucMonte = $gsent->fetchAll();
                         <td> <?php echo $dato['sabor']?> </td>
                         <td> <?php echo $dato['sucursal']?> </td>   
                         <td> 
-                           <select name="" id="cantidadHelado">
-                                <option selected="selected">0</option>    
-                                <option value="cant1">1</option>
-                                <option value="cant2">1/2</option>
-                                <option value="cant3">1/4</option>
+                           <select name="" id="" onchange="calcularTotal()">
+                                <option value="0">0</option>    
+                                <option value="150">1</option>
+                                <option value="80">1/2</option>
+                                <option value="45">1/4</option>
                             </select>
                         </td>
                 </tr>
@@ -101,22 +102,15 @@ $resultado_sucMonte = $gsent->fetchAll();
         </table>
 
         <form class="form-inline d-flex justify-content-end">
-            <div class="form-group mx-sm-3 mb-2">
-                <input class="form-control" type="text" placeholder="Kg" readonly>
-                <input class="form-control" type="text" placeholder="Precio" readonly>
+            <div class="form-group mx-sm-3 mb-2">              
+                <input id="kilos" class="form-control" type="text" placeholder="kg" readonly>
+                <input id="precio" class="form-control " type="text" placeholder="precio" readonly>        
             </div>
             <button type="submit" class="btn btn-primary mb-2">Confirmar</button>
         </form>
         
     </div>   
-<!-- 
-    <footer>
-        <div id="redes">
-            <a href="#"><i class="fab fa-facebook" ></i></a> 
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-pinterest"></i></a>
-        </div>
-    </footer>     -->
+
     <footer>
         <div class="icon-bar">
             <ul>
@@ -135,9 +129,19 @@ $resultado_sucMonte = $gsent->fetchAll();
             </ul>    
         </div>
     </footer>  
-
-
 </body>
+
+<script>
+    function calcularTotal() {
+        var desplegables = document.getElementsByTagName('select');
+        var total = 0;
+           for(var i=0; i<desplegables.length; i++) {
+               total = total + Number(desplegables[i].value);
+           }
+           document.getElementById('precio').value = total;
+       }
+</script>
+
 
 <script type="text/javascript" src='./socialite.min.js'> 
     $(document).ready(function()

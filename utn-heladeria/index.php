@@ -56,8 +56,7 @@ $resultado_sucursal = $gsent->fetchAll();
     
     <div class="container">
         <header class="cabecera">
-            <a href="index.php" class="text-decoration-none"><h1 class="text-center cabecera">HELARTE</h1></a>
-            
+            <a href="index.php" class="text-decoration-none"><h1 class="text-center cabecera">HELARTE</h1></a>         
             <h5><strong>Amor por lo que hacemos</strong></h5>
         </header>
 

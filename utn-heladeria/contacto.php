@@ -52,11 +52,12 @@ $resultado_sucMonte = $gsent->fetchAll();
 
 <body>
     <div class="container">
-        <header>
-            <a href="index.php" ><h1 class=text-center>HELARTE</h1></a>
-            <h5>Amor por lo que hacemos </h5>
+     
+        <header class="cabecera">
+            <a href="index.php" class="text-decoration-none"><h1 class="text-center cabecera">HELARTE</h1></a>
+            
+            <h5><strong>Amor por lo que hacemos</strong></h5>
         </header>
-
         <!-- nav INI  -->
         <ul class="nav nav-pills nav-fill">
 
@@ -81,7 +82,7 @@ $resultado_sucMonte = $gsent->fetchAll();
 
             <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
 
-                <div class="form-container" id="formulario">
+                <div class="form-container">
                     <h1>¿Querés recibir más información sobre nuestros helados? <span>Registrate!</span></h1>
 
                     <form>
@@ -99,16 +100,15 @@ $resultado_sucMonte = $gsent->fetchAll();
                         </div>
                         <div class="button-section">
                             <input type="submit" name="Registro" />
-                                <span class="privacidad">
+                                <!-- <span class="privacidad">
                                     <input type="checkbox" name="campo7" required>
                                     Acuerdo a nuestros <br>
                                     <a class="terms" href="terminos_y_condiciones.html" target="_blank">Términos y condiciones</a>.
-                                </span>
+                                </span> -->
                         </div>
                     </form>
                 </div>
-
-
+        </div>
 <!-- formulario FIN -->
     </div>   
 
@@ -132,18 +132,17 @@ $resultado_sucMonte = $gsent->fetchAll();
             </ul>    
         </div>
     </footer>  
-
-
 </body>
 
 <script type="text/javascript" src='./socialite.min.js'> 
+
     $(document).ready(function()
     {
         $('article.text').one('mouseenter', function()
         {
             Socialite.load($(this)[0]);
+
         });
     });
-
 </script> 
 </html>
